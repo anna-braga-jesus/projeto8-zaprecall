@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+body{
+    background: #FB6B6B;
+}
+.site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.site img{
+    width: 136px;
+    height: 161px;
+    margin-top: 20vh;
+}
+.site h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+.botao-iniciar{
+    width: 246px;
+    height: 54px;
+    border-radius: 5px;
+    background: white;
+    color: #D70900;
+    border: 1px solid #D70900;
+    cursor: pointer;
+    font-size: 18px;
+}
+.retangulo{
+    width: 255px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-size: 36px;
+}
+.retangulo img{
+    width: 52px;
+    height: 60px;
+}
+.titulo{
+    color: white;
+}
+.container-perguntas{
+    margin: 0 auto 95px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-pergunta{
+    height: 65px;
+    width: 300px;
+    border-radius: 5px;
+    background: white;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.caixa-pergunta2{
+    height: 130px;
+    width: 300px;
+    border-radius: 5px;
+    background: #FFFFD4;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.caixa-pergunta4{
+    height: 130px;
+    width: 300px;
+    border-radius: 5px;
+    background: #FFFFD4;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.caixa-pergunta4 .pergunta{
+    text-decoration: line-through;
+}
+
+
+
+.pergunta{
+    padding: 10px;
+    color: #333333;
+}
+.pergunta2{
+    color: #333333;
+    padding: 10px;
+}
+.caixa-pergunta img{
+    height: 23px;
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.card{
+    padding: 10px;
+    color: #333333;
+}
+#mais{
+    display: none;
+}
+footer{
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.icone.erro{
+    background:#FF3030;
+    width: 23px;
+    height: 23px;
+}
+.icone.acerto{
+    width: 23px;
+    height: 23px;
+}
+.icone.pergunta{
+    width: 23px;
+    height: 23px;
+}
+
+
+/* botoes */
+.caixa-pergunta2 .caixa{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+
+}
+.botao{
+    width: 30%;
+    height:37px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    border: none;
+}
+.botao.vermelho{
+    background-color: #FF3030;
+}
+.botao.verde{
+    background-color: #2FBE34;
+}
+.botao.amarelo{
+    background-color: #FF922E;
+}
+
+/* perguntas */
