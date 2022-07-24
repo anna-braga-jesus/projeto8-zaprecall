@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
 *{
-    box-sizing: border-box;
-    font-family: 'Righteous', cursive;
+    box-sizing: border-box; 
+}
+:root{
+    --fonte1: 'Righteous', cursive; 
+    --fonte2: 'Recursive', sans-serif;
+     
+      
 }
 body{
     background: #FB6B6B;
@@ -23,6 +28,7 @@ body{
     font-size: 36px;
     font-weight: 400;
     text-align: center;
+    font-family: var(--fonte1);
 }
 .botao-iniciar{
     width: 246px;
@@ -33,6 +39,7 @@ body{
     border: 1px solid #D70900;
     cursor: pointer;
     font-size: 18px;
+    font-family: var(--fonte2);
 }
 .retangulo{
     width: 255px;
@@ -49,6 +56,7 @@ body{
 }
 .titulo{
     color: white;
+    font-family: var(--fonte1);
 }
 .container-perguntas{
     margin: 0 auto 95px auto;
@@ -66,6 +74,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--fonte2);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+;
+
 }
 .caixa-pergunta2{
     height: 130px;
@@ -74,23 +88,36 @@ body{
     background: #FFFFD4;
     margin-top: 25px;
     display: flex;
-    flex-direction: column;
+    flex-direction: inherit;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    font-family: var(--fonte2)
+}
+.virar{
+    height: 20px;
+    width: 30px;
+    left: 73px;
+    top: -2828px;
+    border-radius: 0px;
+    margin-left: 254px;
+    margin-top:55px;
+    margin-bottom: 5px;
 }
 .caixa-pergunta4{
-    height: 130px;
+    height: 65px;
     width: 300px;
     border-radius: 5px;
-    background: #FFFFD4;
+    background: white;
     margin-top: 25px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    padding: 5px;
     align-items: center;
+    font-family: var(--fonte2)
 }
 .caixa-pergunta4 .pergunta{
     text-decoration: line-through;
+    font-family: var(--fonte2)
 }
 
 
@@ -98,10 +125,21 @@ body{
 .pergunta{
     padding: 10px;
     color: #333333;
+    font-family: var(--fonte2);
+    font-family: Recursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
 }
+.pergunta.verde{color: #2FBE34;}
+.pergunta.vermelho{color:#FF3030 }
+.pergunta.amarelo{color:#FF922E }
+
 .pergunta2{
     color: #333333;
     padding: 10px;
+    font-family: var(--fonte2);
 }
 .caixa-pergunta img{
     height: 23px;
@@ -127,16 +165,31 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+    font-family: var(--fonte2);
+    font-size: 18px;
+    font-weight: 400;
 }
-.icone.erro{
-    background:#FF3030;
+footer p{
+    font-family: var(--fonte2);
+}
+
+/* Icones */
+
+ion-icon {
+    /* background:#FF3030; */
     width: 23px;
     height: 23px;
 }
-.icone.acerto{
-    width: 23px;
-    height: 23px;
+ion-icon[name='close-circle-outline']{
+ color:red;
 }
+ion-icon[name="help-circle-outline"]{
+    color: #FF922E;
+}
+ion-icon[name="checkmark-circle-outline"]{
+    color: #2FBE34;
+}
+
 .icone.pergunta{
     width: 23px;
     height: 23px;
@@ -159,6 +212,7 @@ footer{
     color: white;
     text-align: center;
     border: none;
+    font-family: var(--fonte2);
 }
 .botao.vermelho{
     background-color: #FF3030;
@@ -167,7 +221,24 @@ footer{
     background-color: #2FBE34;
 }
 .botao.amarelo{
-    background-color: #FF922E;
+    background: #FF922E;
 }
 
-/* perguntas */
+.escondido{
+    display: none;
+}
+.resultado{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 222px;
+    text-align: center;
+}
+.resultado h1{
+    font-size: 18px;
+    font-family: var(--fonte2);
+}
+.resultado p{
+    font-size: 18px;
+    font-family: var(--fonte2);
+}
