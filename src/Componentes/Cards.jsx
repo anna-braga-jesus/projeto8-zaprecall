@@ -1,5 +1,4 @@
 import React from "react";
-import vetor from '../Imagens/Vector.png'
 import Card from "./Card";
 
 

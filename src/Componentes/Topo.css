@@ -40,6 +40,7 @@ body{
     cursor: pointer;
     font-size: 18px;
     font-family: var(--fonte2);
+    margin: 0 auto;
 }
 .retangulo{
     width: 255px;
@@ -59,7 +60,7 @@ body{
     font-family: var(--fonte1);
 }
 .container-perguntas{
-    margin: 0 auto 95px auto;
+    margin: 0 auto 210px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,7 +68,7 @@ body{
 }
 .caixa-pergunta{
     height: 65px;
-    width: 300px;
+    width: 450px;
     border-radius: 5px;
     background: white;
     margin-top: 25px;
@@ -83,7 +84,7 @@ body{
 }
 .caixa-pergunta2{
     height: 130px;
-    width: 300px;
+    width: 450px;
     border-radius: 5px;
     background: #FFFFD4;
     margin-top: 25px;
@@ -102,10 +103,13 @@ body{
     margin-left: 254px;
     margin-top:55px;
     margin-bottom: 5px;
+    align-self: flex-end;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .caixa-pergunta4{
     height: 65px;
-    width: 300px;
+    width: 450px;
     border-radius: 5px;
     background: white;
     margin-top: 25px;
@@ -122,15 +126,18 @@ body{
 
 
 
-.pergunta{
-    padding: 10px;
+.pergunta , .pergunta-74{
+    padding: 10px 10px 0 10px;
     color: #333333;
     font-family: var(--fonte2);
     font-family: Recursive;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 22px;
     text-align: left;
+}
+.pergunta-74{
+    font-weight: 400;
 }
 .pergunta.verde{color: #2FBE34;}
 .pergunta.vermelho{color:#FF3030 }
@@ -150,9 +157,6 @@ body{
 .card{
     padding: 10px;
     color: #333333;
-}
-#mais{
-    display: none;
 }
 footer{
     min-height: 70px;
@@ -180,13 +184,13 @@ ion-icon {
     width: 23px;
     height: 23px;
 }
-ion-icon[name='close-circle-outline']{
+ion-icon[name='close-circle']{
  color:red;
 }
-ion-icon[name="help-circle-outline"]{
+ion-icon[name="help-circle"]{
     color: #FF922E;
 }
-ion-icon[name="checkmark-circle-outline"]{
+ion-icon[name="checkmark-circle"]{
     color: #2FBE34;
 }
 
@@ -203,6 +207,7 @@ ion-icon[name="checkmark-circle-outline"]{
     width: 100%;
     padding: 10px;
     font-size: 16px;
+    padding-bottom: 10px;
 
 }
 .botao{
@@ -213,12 +218,15 @@ ion-icon[name="checkmark-circle-outline"]{
     text-align: center;
     border: none;
     font-family: var(--fonte2);
+    cursor: pointer;
 }
 .botao.vermelho{
     background-color: #FF3030;
+
 }
 .botao.verde{
     background-color: #2FBE34;
+    
 }
 .botao.amarelo{
     background: #FF922E;
@@ -241,4 +249,11 @@ ion-icon[name="checkmark-circle-outline"]{
 .resultado p{
     font-size: 18px;
     font-family: var(--fonte2);
+}
+.classe-botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
 }

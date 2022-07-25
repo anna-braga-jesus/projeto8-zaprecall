@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Topo from './Topo';
 import Cards from './Cards';
 import Footer from './Footer';
-import Flashcards from './Flashcards'
 
 
 export default function Pagina1() {

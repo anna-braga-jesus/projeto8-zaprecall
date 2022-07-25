@@ -40,7 +40,7 @@ export default function Card(props){
      console.log('estado3')
      return (
           <li className="caixa-pergunta2">
-               <span className='pergunta 74'>{props.answer}</span>
+               <span className='pergunta-74'>{props.answer}</span>
                <div className="caixa">
                <button className="botao vermelho" onClick={ ()=> SalvaResposta(1)} >Não lembrei</button>
                <button className="botao amarelo" onClick={ ()=> SalvaResposta(2)} >Quase não lembrei</button>
@@ -58,19 +58,19 @@ const LastStep = () => {
                  { salvas===1 ?
                              <>
                                   <span className='pergunta vermelho'> Pergunta {props.index}</span>
-                                  <ion-icon className='erro' size="23px" name="close-circle-outline"></ion-icon>
+                                  <ion-icon className='erro' size="23px" name="close-circle"></ion-icon>
                              </>
                              :
                   salvas===2 ?
                              <>
                                   <span className='pergunta amarelo'> Pergunta {props.index}</span>
-                                  <ion-icon className='icone-pergunta' name="help-circle-outline"></ion-icon>
+                                  <ion-icon className='icone-pergunta' name="help-circle"></ion-icon>
                              </>
                 :
 
                              <>
                                   <span className='pergunta verde'> Pergunta {props.index}</span>
-                                  <ion-icon className='icone acerto' name="checkmark-circle-outline"></ion-icon> 
+                                  <ion-icon className='icone acerto' name="checkmark-circle"></ion-icon> 
                              </>
 
                    }

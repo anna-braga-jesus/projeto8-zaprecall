@@ -39,16 +39,16 @@ export default function Footer({
                     <h1>{show}</h1>
                     <span>{texto}</span>
                 </div>
-                <p>{resultado.length}/{tamanho} concluídos</p>
+                <p>{resultado.length}/{tamanho} CONCLUÍDOS</p>
                 <div>
                     {resultado.map(resultado => 
                      resultado===1 ?
-                                    <ion-icon className='icone-erro' name="close-circle-outline"></ion-icon>
+                                    <ion-icon className='icone-erro' name="close-circle"></ion-icon>
                                 :
                     resultado===2 ?
-                                    <ion-icon className='icone-pergunta' name="help-circle-outline"></ion-icon>
+                                    <ion-icon className='icone-pergunta' name="help-circle"></ion-icon>
                     :
-                                    <ion-icon className='icone-acerto' name="checkmark-circle-outline"></ion-icon> 
+                                    <ion-icon className='icone-acerto' name="checkmark-circle"></ion-icon> 
                     ) }
                 </div>
               
